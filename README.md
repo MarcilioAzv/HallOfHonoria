@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Godot-4.x-blue?logo=godot-engine">
   <img src="https://img.shields.io/badge/GDScript-Game%20Development-green">
   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange">
-  <img src="https://img.shields.io/badge/Platforma-PC-lightgrey">
+  <img src="https://img.shields.io/badge/Plataforma-PC-lightgrey">
 </p>
 
 ## Sobre o Jogo
