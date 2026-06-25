@@ -46,24 +46,21 @@ O projeto foi desenvolvido com foco em sistemas de combate, inteligência artifi
 ### Menu Principal
 
 <p align="center">
-  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fb501cbe-5e35-4eb2-9315-96c514861a83" />
-
+  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fab20cec-0fe4-4823-a43a-8a9e5f3713b3" />
 </p>
 
 ### Gameplay
 
 <p align="center">
-  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/6f97e412-bff1-4a7f-8f87-612297e429a7" />
-  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/578ce301-cf64-4ccb-a7f1-0f8535f16c06" />
-  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/004bf3f9-5aa0-4f2c-9312-829a20853544" />
-
+  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/26c6b215-c6b7-4be2-8c13-eaec40fdb62e" />
+  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2b452c6a-534a-4b3b-ab59-072a400ddea9" />
+  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d704f0a0-d7ed-470d-aa1f-0df17733c7e3" />
 </p>
 
 ### Menu de Pausa
 
 <p align="center">
-  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ff2ecf0c-e9f2-40c4-b21f-3b0c22049d7d" />
-
+  <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d20634b8-5d86-4f0e-a164-30c4b649cd7b" />
 </p>
 
 
