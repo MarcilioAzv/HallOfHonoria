@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ddb4qjgr3purc"]
+
+[ext_resource type="PackedScene" uid="uid://bx8wuknheunbc" path="res://models/models conv/Sem título.glb" id="1_whxsy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_la4i2"]
+size = Vector3(1, 2.0144043, 1.387207)
+
+[node name="lendas" type="StaticBody3D" unique_id=630993533]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=660108313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9880955, -0.029785156)
+shape = SubResource("BoxShape3D_la4i2")
+
+[node name="Sem título" parent="." unique_id=1467034288 instance=ExtResource("1_whxsy")]

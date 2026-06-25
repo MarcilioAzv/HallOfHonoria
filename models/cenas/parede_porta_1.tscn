@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dtxek86acmrbl"]
+
+[ext_resource type="PackedScene" uid="uid://cjwa23jkj77q" path="res://models/dungeon_assets/building/wall_doorway.glb" id="1_pkyrj"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4g3ku"]
+points = PackedVector3Array(2, 4, 0.49999997, 2, 0, 0.49999997, 2, 4, -0.49999997, -2, 4, 0.49999997, 2, 0, -0.49999997, -2, 0, 0.49999997, -2, 4, -0.49999997, -2, 0, -0.49999997)
+
+[node name="parede_porta1" type="StaticBody3D" unique_id=1499114736]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1204445490]
+shape = SubResource("ConvexPolygonShape3D_4g3ku")
+
+[node name="wall_doorway2" parent="." unique_id=1534767326 instance=ExtResource("1_pkyrj")]

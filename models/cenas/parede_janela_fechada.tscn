@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cqewc38lnngag"]
+
+[ext_resource type="PackedScene" uid="uid://dhn4acwhpek7u" path="res://models/dungeon_assets/building/wall_window_closed.glb" id="1_qyroj"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qyroj"]
+points = PackedVector3Array(2, 4, 0.49990216, 2, 0, 0.49990216, 2, 4, -0.49999997, -2, 4, 0.49990216, 2, 0, -0.49999997, -2, 0, 0.49990216, -2, 4, -0.49999997, -2, 0, -0.49999997)
+
+[node name="parede_janela_fechada" type="StaticBody3D" unique_id=1988453635]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1218831601]
+shape = SubResource("ConvexPolygonShape3D_qyroj")
+
+[node name="wall_window_closed2" parent="." unique_id=540854717 instance=ExtResource("1_qyroj")]

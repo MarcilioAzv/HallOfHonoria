@@ -1,0 +1,246 @@
+[gd_scene format=3 uid="uid://cdtn4felrtwd6"]
+
+[ext_resource type="VideoStream" uid="uid://dkscfug3ftdl" path="res://menuInicial/videoMenu.ogv" id="1_e3j6m"]
+[ext_resource type="Script" uid="uid://cycop0v2lmytx" path="res://menuInicial/opcoes/opções.gd" id="1_il0cd"]
+[ext_resource type="FontFile" uid="uid://c130tjo6mn6l4" path="res://menuInicial/fontes/Super Pandora.ttf" id="2_jcv7j"]
+[ext_resource type="Texture2D" uid="uid://bx3iyxcnve50s" path="res://menuInicial/opcoes/opçoes.png" id="2_o5l43"]
+[ext_resource type="Theme" uid="uid://o3teqwdnv43h" path="res://menuInicial/fontes/new_theme.tres" id="3_il0cd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5l43"]
+
+[node name="Opções" type="Control" unique_id=1966960239]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_il0cd")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=188592981]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_e3j6m")
+autoplay = true
+expand = true
+loop = true
+
+[node name="opcoes" type="VBoxContainer" parent="." unique_id=1323680740]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.25
+offset_top = -138.0
+offset_right = 155.25
+offset_bottom = 138.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="opçoes" type="TextureRect" parent="opcoes" unique_id=959162602]
+layout_mode = 2
+texture = ExtResource("2_o5l43")
+expand_mode = 5
+
+[node name="HSeparator3" type="HSeparator" parent="opcoes" unique_id=1234309343]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_o5l43")
+
+[node name="som" type="Button" parent="opcoes" unique_id=1349084493]
+layout_mode = 2
+theme = ExtResource("3_il0cd")
+theme_override_fonts/font = ExtResource("2_jcv7j")
+text = "Som
+"
+
+[node name="HSeparator" type="HSeparator" parent="opcoes" unique_id=1148750136]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_o5l43")
+
+[node name="video" type="Button" parent="opcoes" unique_id=248265631]
+layout_mode = 2
+theme = ExtResource("3_il0cd")
+theme_override_fonts/font = ExtResource("2_jcv7j")
+text = "Vídeo"
+
+[node name="HSeparator2" type="HSeparator" parent="opcoes" unique_id=1978036605]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_o5l43")
+
+[node name="voltar" type="Button" parent="opcoes" unique_id=424880560]
+layout_mode = 2
+theme = ExtResource("3_il0cd")
+theme_override_fonts/font = ExtResource("2_jcv7j")
+text = "Voltar
+"
+
+[node name="video" type="Control" parent="." unique_id=862599495]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="video" unique_id=1696747245]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -94.5
+offset_top = -40.0
+offset_right = 94.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="labels" type="VBoxContainer" parent="video/HBoxContainer" unique_id=1885105375]
+layout_mode = 2
+
+[node name="telaInteira" type="Label" parent="video/HBoxContainer/labels" unique_id=587144447]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jcv7j")
+theme_override_font_sizes/font_size = 20
+text = "Tela Inteira"
+
+[node name="semBordas" type="Label" parent="video/HBoxContainer/labels" unique_id=303050215]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jcv7j")
+theme_override_font_sizes/font_size = 20
+text = "Tela sem Bordas"
+
+[node name="Vsync" type="Label" parent="video/HBoxContainer/labels" unique_id=1626668128]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jcv7j")
+theme_override_font_sizes/font_size = 20
+text = "VSync"
+
+[node name="checks" type="VBoxContainer" parent="video/HBoxContainer" unique_id=1201379386]
+layout_mode = 2
+
+[node name="telaInteira" type="CheckBox" parent="video/HBoxContainer/checks" unique_id=93181771]
+layout_mode = 2
+
+[node name="semBorda" type="CheckBox" parent="video/HBoxContainer/checks" unique_id=1588195593]
+layout_mode = 2
+
+[node name="Vsync" type="CheckBox" parent="video/HBoxContainer/checks" unique_id=1997722454]
+layout_mode = 2
+
+[node name="voltarParaOp" type="Button" parent="video" unique_id=140700266]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.601
+anchor_right = 0.5
+anchor_bottom = 0.601
+offset_left = -34.0
+offset_top = -11.447998
+offset_right = 30.0
+offset_bottom = 11.552002
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("3_il0cd")
+theme_override_fonts/font = ExtResource("2_jcv7j")
+text = "Voltar
+"
+
+[node name="som" type="Control" parent="." unique_id=1246384671]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="som" unique_id=527313529]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.5
+offset_top = -38.5
+offset_right = 144.5
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Labels" type="VBoxContainer" parent="som/HBoxContainer" unique_id=1563095191]
+layout_mode = 2
+
+[node name="volumeGeral" type="Label" parent="som/HBoxContainer/Labels" unique_id=353677860]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_jcv7j")
+theme_override_font_sizes/font_size = 20
+text = "Volume Geral"
+
+[node name="musica" type="Label" parent="som/HBoxContainer/Labels" unique_id=937087505]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_jcv7j")
+theme_override_font_sizes/font_size = 20
+text = "Música"
+
+[node name="efeitos" type="Label" parent="som/HBoxContainer/Labels" unique_id=1297914667]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_jcv7j")
+theme_override_font_sizes/font_size = 20
+text = "Efeitos Sonoros"
+
+[node name="Sliders" type="VBoxContainer" parent="som/HBoxContainer" unique_id=1427187403]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 13
+
+[node name="volumeGeral" type="HSlider" parent="som/HBoxContainer/Sliders" unique_id=1614778610]
+layout_mode = 2
+
+[node name="musica" type="HSlider" parent="som/HBoxContainer/Sliders" unique_id=1623980042]
+layout_mode = 2
+
+[node name="efeitos" type="HSlider" parent="som/HBoxContainer/Sliders" unique_id=1690811347]
+layout_mode = 2
+
+[node name="deSomVoltarParaOP" type="Button" parent="som" unique_id=519404481]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.601
+anchor_right = 0.5
+anchor_bottom = 0.601
+offset_left = -34.0
+offset_top = -11.447998
+offset_right = 30.0
+offset_bottom = 11.552002
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("3_il0cd")
+theme_override_fonts/font = ExtResource("2_jcv7j")
+text = "Voltar
+"
+
+[connection signal="pressed" from="opcoes/som" to="." method="_on_som_pressed"]
+[connection signal="pressed" from="opcoes/video" to="." method="_on_video_pressed"]
+[connection signal="pressed" from="opcoes/voltar" to="." method="_on_voltar_pressed"]
+[connection signal="toggled" from="video/HBoxContainer/checks/telaInteira" to="." method="_on_tela_inteira_toggled"]
+[connection signal="toggled" from="video/HBoxContainer/checks/semBorda" to="." method="_on_sem_borda_toggled"]
+[connection signal="toggled" from="video/HBoxContainer/checks/Vsync" to="." method="_on_vsync_toggled"]
+[connection signal="pressed" from="video/voltarParaOp" to="." method="_on_voltar_para_op_pressed"]
+[connection signal="value_changed" from="som/HBoxContainer/Sliders/volumeGeral" to="." method="_on_volume_geral_value_changed"]
+[connection signal="value_changed" from="som/HBoxContainer/Sliders/musica" to="." method="_on_musica_value_changed"]
+[connection signal="value_changed" from="som/HBoxContainer/Sliders/efeitos" to="." method="_on_efeitos_value_changed"]
+[connection signal="pressed" from="som/deSomVoltarParaOP" to="." method="_on_de_som_voltar_para_op_pressed"]

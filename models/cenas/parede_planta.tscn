@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cb11onldayud8"]
+
+[ext_resource type="PackedScene" uid="uid://b43gslnmp1mio" path="res://models/dungeon_assets/building/wall_cracked.glb" id="1_anfu4"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ai4l8"]
+points = PackedVector3Array(2, 4, 0.5, 2, 0, 0.5, 2, 4, -0.5, -2, 4, 0.5, 2, 0, -0.5, -2, 0, 0.5, -2, 4, -0.5, -2, 0, -0.5)
+
+[node name="parede_planta" type="StaticBody3D" unique_id=1419680425]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1720390920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14598234, 0, 0.74751085)
+shape = SubResource("ConvexPolygonShape3D_ai4l8")
+
+[node name="wall_cracked2" parent="." unique_id=2118937432 instance=ExtResource("1_anfu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1459955, 0, 0.75649714)

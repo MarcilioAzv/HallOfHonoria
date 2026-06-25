@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://4o5ga5lj1o54"]
+
+[ext_resource type="Script" uid="uid://cvdh63oh8cu3x" path="res://scripts/bot_cavaleiro.gd" id="1_7arbw"]
+
+[node name="Cavaleiro" type="Node3D" unique_id=146204847]
+script = ExtResource("1_7arbw")

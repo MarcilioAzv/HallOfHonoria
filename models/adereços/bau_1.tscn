@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://fvy3gcjyb0sh"]
+
+[ext_resource type="PackedScene" uid="uid://bp8vkn1cwb3xe" path="res://models/dungeon_assets/props/chest_gold.glb" id="1_bkehx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4c13e"]
+size = Vector3(1.7147217, 1.2257843, 1.2408142)
+
+[node name="bau1" type="StaticBody3D" unique_id=1465248397]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=636131533]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17163253, 0.61289215, 0.31101024)
+shape = SubResource("BoxShape3D_4c13e")
+
+[node name="chest_gold2" parent="." unique_id=1761297891 instance=ExtResource("1_bkehx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17015243, 0, 0.3114617)

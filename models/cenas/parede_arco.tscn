@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dh4vmrktt5tn3"]
+
+[ext_resource type="PackedScene" uid="uid://dwye0wqoiwlae" path="res://models/cenas/wall_arched_with_collider.glb" id="1_xpilb"]
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=2033151121]
+
+[node name="wall_arched_with_collider" parent="." unique_id=1679051047 instance=ExtResource("1_xpilb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+
+[editable path="wall_arched_with_collider"]

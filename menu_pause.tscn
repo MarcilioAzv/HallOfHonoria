@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cga4fe4fp221e"]
+
+[ext_resource type="Script" uid="uid://tjgvnxhrxnde" path="res://MenuPause/menu_pause.gd" id="1_boxul"]
+[ext_resource type="Texture2D" uid="uid://ca31tsoes3k84" path="res://MenuPause/pausado.png" id="3_m54gf"]
+[ext_resource type="Theme" uid="uid://o3teqwdnv43h" path="res://menuInicial/fontes/new_theme.tres" id="4_3s6ug"]
+[ext_resource type="FontFile" uid="uid://c130tjo6mn6l4" path="res://menuInicial/fontes/Super Pandora.ttf" id="5_niavv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x5pgy"]
+
+[node name="menuPause" type="Control" unique_id=338392799]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_boxul")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=266356010]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.28197688, 0.11445346, 4.813075e-08, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1172937079]
+layout_mode = 0
+offset_left = 425.14063
+offset_top = 238.375
+offset_right = 725.1406
+offset_bottom = 408.375
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="opçoes" type="TextureRect" parent="VBoxContainer" unique_id=833402434]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("3_m54gf")
+expand_mode = 1
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=497902740]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_x5pgy")
+
+[node name="vtMenuInicial" type="Button" parent="VBoxContainer" unique_id=1095112709]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme = ExtResource("4_3s6ug")
+theme_override_fonts/font = ExtResource("5_niavv")
+text = "Menu
+
+"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=21574892]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_x5pgy")
+
+[node name="vtAoJogo" type="Button" parent="VBoxContainer" unique_id=1104786231]
+layout_mode = 2
+theme = ExtResource("4_3s6ug")
+text = "Voltar
+"
+
+[connection signal="pressed" from="VBoxContainer/vtMenuInicial" to="." method="_on_vt_menu_inicial_pressed"]
+[connection signal="pressed" from="VBoxContainer/vtAoJogo" to="." method="_on_vt_ao_jogo_pressed"]

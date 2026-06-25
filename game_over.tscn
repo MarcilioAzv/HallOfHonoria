@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://bx4ig58x45a56"]
+
+[ext_resource type="Script" uid="uid://whp0vjg5t76r" path="res://game_over.gd" id="1_8u835"]
+[ext_resource type="Texture2D" uid="uid://ckojiiu8y8m4h" path="res://Game-over.png" id="1_ccer4"]
+[ext_resource type="Theme" uid="uid://o3teqwdnv43h" path="res://fontes/new_theme.tres" id="2_8u835"]
+[ext_resource type="FontFile" uid="uid://c130tjo6mn6l4" path="res://fontes/Super Pandora.ttf" id="3_ftari"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_28vn7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x5pgy"]
+
+[node name="GameOver" type="Control" unique_id=55261551]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8u835")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1003891284]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4421469, 0.17321956, 0.0072795353, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=484702844]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -52.5
+offset_right = 100.0
+offset_bottom = 52.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOver" type="TextureRect" parent="VBoxContainer" unique_id=570348887]
+layout_mode = 2
+texture = ExtResource("1_ccer4")
+expand_mode = 5
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer" unique_id=1863593642]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_28vn7")
+
+[node name="Ressuscitar" type="Button" parent="VBoxContainer" unique_id=463585123]
+layout_mode = 2
+theme = ExtResource("2_8u835")
+theme_override_fonts/font = ExtResource("3_ftari")
+text = "Ressuscitar"
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=554182468]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_28vn7")
+
+[node name="Menu" type="Button" parent="VBoxContainer" unique_id=379236886]
+layout_mode = 2
+theme = ExtResource("2_8u835")
+theme_override_fonts/font = ExtResource("3_ftari")
+text = "Voltar ao Menu"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1485233884]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_x5pgy")
+
+[node name="Sair" type="Button" parent="VBoxContainer" unique_id=1515390505]
+layout_mode = 2
+theme = ExtResource("2_8u835")
+text = "Abandonar
+
+"
+
+[connection signal="pressed" from="VBoxContainer/Ressuscitar" to="." method="_on_ressuscitar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer/Sair" to="." method="_on_sair_pressed"]

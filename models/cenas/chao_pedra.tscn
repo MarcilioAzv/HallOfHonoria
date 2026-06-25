@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://sr7pfvayb0gj"]
+
+[ext_resource type="PackedScene" uid="uid://bhvqd1nbdq1e7" path="res://models/dungeon_assets/building/floor_stone.glb" id="1_uwbuy"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ki1uj"]
+points = PackedVector3Array(-2, -0.10000001, -2, -2, -0.10000001, 2, -2, 0.049985334, -2, 2, -0.10000001, -2, -2, 0.049985334, 2, 2, -0.10000001, 2, 0, 0.050000012, 0, 2, 0.049985334, -2, 2, 0.049985334, 2)
+
+[node name="chao_pedra" type="StaticBody3D" unique_id=1810223198]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1545748430]
+shape = SubResource("ConvexPolygonShape3D_ki1uj")
+
+[node name="floor_stone" parent="." unique_id=632631317 instance=ExtResource("1_uwbuy")]
